@@ -7,7 +7,7 @@ published: true
 
 # HELLO WORLD!
 
-##THIS IS MY FIRST BLOG POST!
+## THIS IS MY FIRST BLOG POST!
 
 Pretty cool eh
 
