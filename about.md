@@ -25,3 +25,7 @@ You cool and me cool, so we should definitely connect on Twitter :D
 
 Email: [yamaatsushi927@gmail.com](mailto:yamaatsushi927@gmail.com)
 Twitter: [@jumbosushi](https://twitter.com/jumbosushi)
+
+Chao!
+
+![Ron Swanson da best Swanson](http://a.fod4.com/misc/dancedance.gif)
