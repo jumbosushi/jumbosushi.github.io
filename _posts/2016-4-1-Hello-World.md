@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "You're up and running!"
+title: "My first post"
 published: true
 ---
 
@@ -11,5 +11,4 @@ published: true
 
 Pretty cool eh
 
-_This is editted on prose.io_ 
-
+_This is editted on prose.io_
