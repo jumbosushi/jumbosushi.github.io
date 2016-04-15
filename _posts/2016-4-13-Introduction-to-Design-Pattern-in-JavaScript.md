@@ -4,7 +4,7 @@ title: "Introduction to Design Pattern in JavaScript"
 published: true
 ---
 
-### Hey there :smile: !
+## Hey there!
 
 If you've been coding for a while, you might have heard about this thing called **"Design Pattern"**. But what the heck are they? Why are they useful? Should you learn them?
 As another JavaScript novice like yourself, I just learned about this concept recently. I found it really cool so I wanted to share with you!
@@ -16,7 +16,7 @@ It would be helpful to have a basic understanding of Object Oriented Programming
 - ["OOP In JavaScript: What You NEED to Know"](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 - [Understand JavaScript Closures With Ease](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
 
-### But first, what is a design pattern?
+## But first, what is a design pattern?
 
 ![wut is this](http://img.pandawhale.com/post-32023-what-is-this-are-you-trying-to-UN60.gif)
 
@@ -26,7 +26,7 @@ According to the author of ["Learning JavaScript Design Patterns"](https://addyo
 
 In other words, design patterns provide a set ways to solve common problems, which is super helpful if you are new to JavaScript like me since it let me focus on building cool apps instead of focusing on how to structure my code.
 
-### Do I need to know design pattern?
+## Do I need to know design pattern?
 
 ![Yup](https://cdn0.vox-cdn.com/imported_assets/2294960/yup.gif)
 
@@ -52,7 +52,7 @@ To sum it up it is almost like a ....
 ![WoaRIGHT!?](http://s.quickmeme.com/img/69/6976f2093556822ff4f333b667e636b1ee7702ac9b1548e5a85dcf9d26121c34.jpg)
 
 
-### Which pattern should I learn?
+## Which pattern should I learn?
 
 Awesome! Learning Design pattern sounds like a great deal eh?
 But now the questions is, **which one should you learn???**
@@ -76,6 +76,8 @@ To summarize above answers:
 - Having private variables protect them from being manipulated outside of its class unintentionally.
 - Private methods keep the functions that will only be used inside the class, hence hide what the world out of the class doesn't need to see.
 - Less clutter the global namespace
+
+## Diving Into The Code
 
 But enough talking! Let's dive into the code.
 Let's say we're making a program that keeps track of how many people are in the movie theater!
@@ -121,8 +123,10 @@ Pretty cool right?
 
 As you can see, "count" variable is kept inside pplCounterModule class, so the outside world can't access it or manipulate it. Because you know that the only way to manipulate the variable is through its public methods, it'll be super easy to debug!
 
-Guess. What. You now a design patternin JavaScript! Congrats :tada: :tada: :tada:!
+Guess. What. You now a design patternin JavaScript! Congrats!
 ![WOAAA](https://static1.squarespace.com/static/560d5034e4b0db2bbb878258/t/5651312ae4b08b846b819e13/1448161583756/Amazed.gif)
+
+## The Revealing Module Pattern
 
 Now that we're on a roll, let's give it a go at another pattern - **The Revealing Module Pattern**
 
@@ -171,6 +175,7 @@ pplCounterModule.current() //  5
 Notice the difference?
 
 This one gives couple extra benefits:
+
 - Cleaner code
 - The public methods name can be simple
 - Easier to maintain which method is public or not
