@@ -30,7 +30,7 @@ In other words, design patterns provide a set ways to solve common problems, whi
 
 ![Yup](https://cdn0.vox-cdn.com/imported_assets/2294960/yup.gif)
 
-Before we get into to the meat and potato of this article, I know what you're thinking. **"C'mon Atsushi ¯\_(ツ)_/¯, I don't NEED to learn any design patterns. My code works!** and great shirt btw" Thanks, and you are not wrong. I know your code is utterly beautiful as of now.
+Before we get into to the meat and potato of this article, I know what you're thinking. **"C'mon Atsushi ¯\\\_(ツ)_/¯, I don't NEED to learn any design patterns. My code works!** and great shirt btw" Thanks, and you are not wrong. I know your code is utterly beautiful as of now.
 
 But think of it like this. Imagine that you are trying to build a house. You could build it by putting together woods based on how you think a house should look like, and I know you are smart so it would probably work. However, you might find it hard to change part of the house after a while since many things might be depended on each other unintentionally.
 
