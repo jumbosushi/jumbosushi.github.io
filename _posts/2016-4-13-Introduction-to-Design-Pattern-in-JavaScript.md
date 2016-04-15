@@ -4,7 +4,7 @@ title: "Introduction to Design Pattern in JavaScript"
 published: true
 ---
 
-## Hey there!
+![BUILDING](https://s.yimg.com/ny/api/res/1.2/sBYU0kLm_6u4R7Q8c0_MEw--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTAw/http://l.yimg.com/os/publish-images/movies/2014-02-07/893031a0-904f-11e3-af9e-c7c48465647e_lego-construct.gif)
 
 If you've been coding for a while, you might have heard about this thing called **"Design Pattern"**. But what the heck are they? Why are they useful? Should you learn them?
 As another JavaScript novice like yourself, I recently learned about this concept too. I found it really cool so I wanted to share with you!
