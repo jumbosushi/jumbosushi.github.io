@@ -7,11 +7,11 @@ published: true
 ## Hey there!
 
 If you've been coding for a while, you might have heard about this thing called **"Design Pattern"**. But what the heck are they? Why are they useful? Should you learn them?
-As another JavaScript novice like yourself, I just learned about this concept recently. I found it really cool so I wanted to share with you!
+As another JavaScript novice like yourself, I recently learned about this concept too. I found it really cool so I wanted to share with you!
 
-This article is aimed toward programmers who have some experience with JavaScript, maybe wrote an app or two, but never thought about how to design their code. Even if you are a novice programmer, this article should entertain you and give you a quick refresher on one of the most common design patterns - The Revealing Module Pattern.
+This article is aimed toward programmers who have some experience with JavaScript, maybe wrote an app or two, but never thought about how to design their code. Even if you are a novice programmer, this article should entertain you and give you a quick refresher on one of the most common design patterns.
 
-It would be helpful to have a basic understanding of Object Oriented Programming and closures. If you are unsure of what they are, I found the following articles by JavaScript.isSexy to be very helpful and ... well, sexy.
+It would be helpful to have a basic understanding of Object Oriented Programming and Closures. If you are unsure of what they are, I found the following articles by JavaScript.isSexy to be very helpful and ... well, sexy.
 
 - ["OOP In JavaScript: What You NEED to Know"](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 - [Understand JavaScript Closures With Ease](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
@@ -30,22 +30,22 @@ In other words, design patterns provide a set ways to solve common problems, whi
 
 ![Yup](https://cdn0.vox-cdn.com/imported_assets/2294960/yup.gif)
 
-Before we get into to the meat and potato of this article, I know what you're thinking. **"C'mon Atsushi ¯\_(ツ)_/¯, I don't NEED to learn any design patterns. My code works!** Great shirt btw" Thanks, and you are not wrong. I know your code is utterly beautiful as of now.
+Before we get into to the meat and potato of this article, I know what you're thinking. **"C'mon Atsushi ¯\_(ツ)_/¯, I don't NEED to learn any design patterns. My code works!** and great shirt btw" Thanks, and you are not wrong. I know your code is utterly beautiful as of now.
 
-But think of it like this. Imagine that you are trying to build a house. You could build it by putting together woods based on how you think a house should look like, and I know you are smart so it would probably work. However, you might find it hard to change part of the house after a while as many things are depended on each other unintentionally.
+But think of it like this. Imagine that you are trying to build a house. You could build it by putting together woods based on how you think a house should look like, and I know you are smart so it would probably work. However, you might find it hard to change part of the house after a while since many things might be depended on each other unintentionally.
 
-Instead, let's say your architect friend Joe comes along to help you build the house. Joes's a nice guy, so he draws a planned out diagram on how the house should be build based on his experience. Once the house is build, you would find it easy to manipulate part of the house since you have understanding of how changing one part affect others.
+Instead, let's say your architect friend Joe comes along to help you build the house. Joe is a nice guy, so he draws a diagram on how the house should be build based on his experience. Once the house is build, you would find it easy to manipulate part of the house since you have understanding of how changing one part affect others. After enough time, you can change the house to be what ever you want it to be with less hustle!
 
 ![Two Houses](http://i.imgur.com/BnvyFnp.jpg)
 
-The planning sheet that Joe made is exactly what design pattern is! It gives you a roadmap to build a robust software that is easy to manipulate and scale for everyone!
+The planning diagram that Joe made is exactly what design pattern is! It gives you a roadmap to build a robust software from other programmers experiences that makes your code easy to manipulate and scale for everyone!
 
 Beside from the fact you can knock your friend's socks off by saying you know JavaScript design pattern, knowing design patterns makes you a better programmer! It allows you to:
 
 - Design new applications quickly and efficiently
 - Follow the solution proven right by programmers before us
 - Understand the structure of other programs
-- Communicate more expressively with other programmers.
+- Communicate expressively with other programmers.
 
 To sum it up it is almost like a ....
 
@@ -65,7 +65,7 @@ Please allow me to introduce - **Module Design Pattern!**
 ![tada](https://i23.photobucket.com/albums/b381/dancer_chique17/tada.gif)
 
 Module design pattern is one of the most common JavaScript design pattern used, and one of the easiest to use!
-The main idea is that **it provide JavaScript classes an ability to have private variables and private methods!**
+The main idea is that **it provides JavaScript classes an ability to have private variables and private methods!**
 
 Why are private variables and methods good? These StackOverflow answers gives a great explanation than I ever could!
 
@@ -73,13 +73,14 @@ Why are private variables and methods good? These StackOverflow answers gives a 
 - [Why “private” methods in the object oriented?](https://stackoverflow.com/questions/2620699/why-private-methods-in-the-object-oriented)
 
 To summarize above answers:
+
 - Having private variables protect them from being manipulated outside of its class unintentionally.
-- Private methods keep the functions that will only be used inside the class, hence hide what the world out of the class doesn't need to see.
+- Private methods keep the functions that will only be used inside the class. Hence, hide what the world out of the class doesn't need to see.
 - Less clutter the global namespace
 
 ## Diving Into The Code
 
-But enough talking! Let's dive into the code.
+Enough talking! Let's dive into the code.
 Let's say we're making a program that keeps track of how many people are in the movie theater!
 
 ```JavaScript
@@ -123,7 +124,7 @@ Pretty cool right?
 
 As you can see, "count" variable is kept inside pplCounterModule class, so the outside world can't access it or manipulate it. Because you know that the only way to manipulate the variable is through its public methods, it'll be super easy to debug!
 
-Guess. What. You now a design patternin JavaScript! Congrats!
+GUESS. WHAT. You now know a design pattern in JavaScript! Congrats!
 ![WOAAA](https://static1.squarespace.com/static/560d5034e4b0db2bbb878258/t/5651312ae4b08b846b819e13/1448161583756/Amazed.gif)
 
 ## The Revealing Module Pattern
@@ -177,17 +178,17 @@ Notice the difference?
 This one gives couple extra benefits:
 
 - Cleaner code
-- The public methods name can be simple
+- The public methods name can be simple, since privately defined methods can have descriptive function names instead.
 - Easier to maintain which method is public or not
 
 Aaaand that's a wrap!
-You can pat yourself on the back, and can now tell your friends that you know TWO Design Patterns!
+You can pat yourself on the back. Go tell your friends that you now know TWO design patterns!
 
 ![yas](https://media.giphy.com/media/WKdPOVCG5LPaM/giphy.gif)
 
 
-There are many other cool patterns out there.
+There are many, many other cool patterns out there.
 
-["Learning JavaScript Design Patterns" by Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) is a great resource if you want to continue learning other patterns!
+["Learning JavaScript Design Patterns" by Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) is a great resource to start if you want to dig deeper into design patterns!
 
 Till next time, chao!
