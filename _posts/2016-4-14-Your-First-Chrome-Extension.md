@@ -190,6 +190,7 @@ Aw, purrfection.
 
 Aaaand there you go! You just made your very own Chrome Extension!
 If you are interested in learning more, check out their [official documentations](https://developer.chrome.com/multidevice).
+
 Welcome to the world of Chrome Extensions, and have fun making your Chrome the one and only in the world with extensions you'll make!
 
 ![Original Google](http://assets.itsnicethat.com/system/files/032014/53341d5d5c3e3c3320001884/images_slice_large/4.jpg?1438263228)
