@@ -134,7 +134,7 @@ Now that we're on a roll, let's give it a go at another pattern - **The Revealin
 
 As you might have been able to tell from the name, it is very similar to Module Design Pattern except one small part - everything is defined privately!
 
-```JavaScript
+{% highlight javascript %}
 var pplCounterModule = (function() {
 
   // Private Variable
@@ -172,7 +172,7 @@ pplCounterModule.current() //  0
 pplCounterModule.add(6)    // +6
 pplCounterModule.remove()  // -1
 pplCounterModule.current() //  5
-```
+{% endhighlight %}
 
 Notice the difference?
 
