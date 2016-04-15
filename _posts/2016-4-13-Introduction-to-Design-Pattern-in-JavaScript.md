@@ -83,7 +83,8 @@ To summarize above answers:
 Enough talking! Let's dive into the code.
 Let's say we're making a program that keeps track of how many people are in the movie theater!
 
-```JavaScript
+
+{% highlight javascript %}
 var pplCounterModule = (function() {
 
   // Private Variable
@@ -117,7 +118,7 @@ pplCounterModule.returnCount()  //  0
 pplCounterModule.addPerson(6)   // +6
 pplCounterModule.removePerson() // -1
 pplCounterModule.returnCount()  //  5
-```
+{% endhighlight %}
 
 
 Pretty cool right?
