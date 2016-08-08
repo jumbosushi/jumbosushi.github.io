@@ -1,0 +1,72 @@
+---
+layout: post
+title: "Build a mailer with Rails"
+published: false
+---
+
+![mailer_top](https://media.giphy.com/media/3oEdv9OpWdiMIcCnYc/giphy.gif)
+
+Guys, I have a confession to make.
+
+Believe it or not, I find emails to be ... cool.
+There. I said it.
+
+I was working on a system-failure notification system at my internship, and that was when I was introduced to the concept of mailers in rails.  
+Building your own email service? How cool is that!?
+
+In this tutorial we will learn how to set up your own email service in your rails app!
+
+This article is aimed at people who have some idea of how MVC works in Rails, but havent really touched that "mailer" directory ever since "rails new" command (we've all been there ヽ(´ー｀)ノ)
+
+Haven't used Rails in a while or just wanna know enough to go through this article? I found [this article](http://adrianmejia.com/blog/2011/08/11/ruby-on-rails-architectural-design/) by Adrian Mejia super helpful when I was trying to grasp the overview of the framework. It's bit lengthy but it'll worth it. Check it out!
+
+What you'll soon find out is that mailer is nothing to be scared of. In fact, it follows a familiar MVC logic that the rest of the rails app has. It's almost like learning to ride a penny board after knowing how to ride skateboard. Piece of cake.
+
+We will make a fake email newsletter called TeaHouse that send am email with tea emojis  when the action is triggeered.
+
+Join me. Its time to maken emails cool again.
+
+![it's time](https://media.giphy.com/media/13YvCtTJCT4mGI/giphy.gif)
+
+Hero.gif preferably taking out a sword
+
+Close your Slack and let's get started!
+(But you can keep open #catgifs for you know emergency)
+
+The first step is to make a new app.
+
+Rails g CoffeeDrip
+
+Awesome. Do you see that mailer directory?
+
+Show file directory
+Comment on mailer directory line
+
+Now time to make the ActionMailer!
+
+< rails g mailer tea_mailer
+
+Well create a new method called welcome_email, and this will handle the action of sending the email. It takes the user object that we'll make soon as param.
+Change the default from email while you're at it!
+
+Show def CoffeeDripmailer
+
+This is where it gets similar to rails's original MVC. There already exists the index view in app/views/mailer
+
+This will be template of the email we'll be sending in our app. Feel free to make it anything you would expect from CoffeeDrip newsletter. Here's mine!
+
+< HTML of the template >
+
+According to the doc, (link it here) it is good practice to make the text version of the email you wanna send in .txt format. This is so that people who use email service they use might not support html template. Its best not to make too many assumptions about our user.
+
+Here we have an email that is ready to be sent, and now we just need something limr a Santa Clouse to deliver these packages of joy (shoutout to my university's president Santa <link to his Twitter>  )
+Just like Santa, we need the name and email address of our users to complete a delivery. Let's set that up first.
+
+< rails g scaffold user name:string user:email
+   rails db:migrate
+
+If you look at the output, youll notice that caffold will take care of heavy lifting for making CRUD operations for us!
+
+Did it work?
+
+![Pretty cool eh](https://media.giphy.com/media/a7YAu5i1LuRhK/giphy.gif)
