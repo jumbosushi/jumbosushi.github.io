@@ -14,58 +14,179 @@ There. I said it.
 I was working on a system-failure notification system at my internship, and that was when I was introduced to the concept of mailers in rails.  
 Building your own email service? How cool is that!?
 
-In this tutorial we will learn how to set up your own email service in your rails app!
+In this tutorial we will learn how to set up your own local email service in your rails app!
 
 This article is aimed at people who have some idea of how MVC works in Rails, but havent really touched that "mailer" directory ever since "rails new" command (we've all been there ヽ(´ー｀)ノ)
 
-Haven't used Rails in a while or just wanna know enough to go through this article? I found [this article](http://adrianmejia.com/blog/2011/08/11/ruby-on-rails-architectural-design/) by Adrian Mejia super helpful when I was trying to grasp the overview of the framework. It's bit lengthy but it'll worth it. Check it out!
+Haven't used Rails in a while or just wanna know enough to go through this article?  
+I found [this article](http://adrianmejia.com/blog/2011/08/11/ruby-on-rails-architectural-design/) by Adrian Mejia super helpful when I was trying to grasp the overview of the framework. It's bit lengthy but it'll worth it. Check it out!
 
 What you'll soon find out is that mailer is nothing to be scared of. In fact, it follows a familiar MVC logic that the rest of the rails app has. It's almost like learning to ride a penny board after knowing how to ride skateboard. Piece of cake.
 
-We will make a fake email newsletter called TeaHouse that send am email with tea emojis  when the action is triggeered.
+We will make a local email newsletter called TeaHouse that send am email with tea emojis  when the action is triggeered.
 
 Join me. Its time to maken emails cool again.
 
 ![it's time](https://media.giphy.com/media/13YvCtTJCT4mGI/giphy.gif)
 
-Hero.gif preferably taking out a sword
+## Setting up the applicatin
 
 Close your Slack and let's get started!
-(But you can keep open #catgifs for you know emergency)
+(But you can keep open #catgifs for you know ... for ... emergencies)
+
+
+**My Development Environment:**
+- **Ruby version: 2.3.1**
+- **Ruby on Rails version: 4.2.6**
+- **OS: Ubuntu 16.04 LTS**
+**
+
+To make my life simpler, I'll assume that you are using UNIX environment and already have ruby + rails installed on your machine (Sorry Windows guru :/ maybe next time)
 
 The first step is to make a new app.
 
-Rails g CoffeeDrip
+```bash
+rails new teahouse
+```
 
-Awesome. Do you see that mailer directory?
+Awesomeeeee. Do you see that mailer directory?
 
-Show file directory
-Comment on mailer directory line
+![mailer directory](http://i.imgur.com/peLf97X.png)
 
-Now time to make the ActionMailer!
+Now time to make the ActionMailer! Think of it like a Controller in good ol' rails page rendering.
 
-< rails g mailer tea_mailer
+```bash
+rails g mailer tea_mailer
+```
 
-Well create a new method called welcome_email, and this will handle the action of sending the email. It takes the user object that we'll make soon as param.
+We can set our basic email configurations in `app/mailers/application_mailer.rb`.
+
 Change the default from email while you're at it!
 
-Show def CoffeeDripmailer
+```ruby
+class ApplicationMailer < ActionMailer::Base
+  default from: "wasup@teahouse.com"
+  layout 'mailer'
+end
+```
 
-This is where it gets similar to rails's original MVC. There already exists the index view in app/views/mailer
+Inside tea_mailer, we'll create a new method called welcome_email, and this will handle the action of sending our tea email. It takes the user object (don't worry we'll make it soon) as param.
 
-This will be template of the email we'll be sending in our app. Feel free to make it anything you would expect from CoffeeDrip newsletter. Here's mine!
+```ruby
+class TeaMailer < ApplicationMailer
+  def welcome_email(user)
+    @user = user
+    mail(to: @user.email, subject: 'Hello from TeaHouse!')
+  end
+end
+```
 
-< HTML of the template >
+This is where it gets similar to rails's original MVC. Just like how Rails automatically renders the view file with the controller method's name, mailer renders the email template with the same name as the ApplicationMailer's method name! Pretty cool eh?
 
-According to the doc, (link it here) it is good practice to make the text version of the email you wanna send in .txt format. This is so that people who use email service they use might not support html template. Its best not to make too many assumptions about our user.
+Now it's time to make the actual content of the email!  
+Make a new html file at `app/views/tea_mailer/welcome_email.html.erb`  
+This will be template of the email we'll be sending in our app. Feel free to make it anything you would expect from TeaHouse newsletter. Here's mine!
 
-Here we have an email that is ready to be sent, and now we just need something limr a Santa Clouse to deliver these packages of joy (shoutout to my university's president Santa <link to his Twitter>  )
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+  <h1>Hey <%= @user.name %>!</h1>
+  <p> Welcome to Tea House newsletter! </p>
+  <p> This is where you'll your daily dose of tea emojis!</p>
+  <br/>
+  <p> 🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵 </p>
+  <p> 🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵 </p>
+  <p> 🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵 </p>
+  </body>
+</html>
+```
+
+According to [the rails doc](http://guides.rubyonrails.org/action_mailer_basics.html), it is good practice to send the text version of the email on top of the html. This is so that some email clients that does't not support html template can still receivve our email. Its best not to make too many assumptions about our user.
+
+`app/views/tea_mailer/welcome_email.txt.erb` should be made, and here's how mine turned out.
+
+```
+Hey <%= @user.name %>!
+
+==============================
+
+Welcome to Tea House newsletter!
+This is where you'll your daily dose of tea emojis
+
+🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵
+🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵
+🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵
+```
+
+Here we have an email that is ready to be sent, and now we just need something like a Santa Clous to deliver these packages of joy (btw shoutout to my university's [President Santa](https://twitter.com/ubcprez))
+
 Just like Santa, we need the name and email address of our users to complete a delivery. Let's set that up first.
 
-< rails g scaffold user name:string user:email
-   rails db:migrate
+```bash
+rails g scaffold user name:string email:string
+rails db:migrate
+```
 
-If you look at the output, youll notice that caffold will take care of heavy lifting for making CRUD operations for us!
+This creates a User table with name and email columns. In other words, we are all set! We know who to send the emails, we know what to send on the email, and now we gotta figure out how.
+
+Before we go to the next step, I know what you're thinking if you were like me when I tried it out on my own
+
+![I read your mind](http://img.topyaps.com/wp-content/uploads/2016/06/HO.gif)
+
+No worries! Rails made it all simple for us.
+
+
+## Mail delivery Logic
+
+In our application, we will use a UNIX specific email software called [sendmail](https://en.wikipedia.org/wiki/Sendmail)!  
+It sends email through [STMP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) (think HTTP but for email), except it's way simpler than traditional setup when used in rails (if you are interested in how STMP works, microft busted out a [great write-up](https://technet.microsoft.com/en-us/magazine/cc160769.aspx) on how it works if used as it is)
+
+If you are using Mac, sendmail is already installed (lucky you).  
+For Ubuntu users, let's download it real quick.
+
+
+```bash
+sudo apt-get install sendmail
+```
+
+Boom. On to the fun part.
+
+Head over to `config/environments/development.rb`, and add one magical line to your local setting:
+
+```bash
+# Send mailer
+config.action_mailer.delivery_method = :sendmail
+```
+
+Instead of heafty STMP configuration, this one line just tells Rails to send emails through sendmail. Just wow.
+(Wanna be more geeky and set it up yourself? Daniel Kehoe's ["Send Email with Rails" article](https://railsapps.github.io/rails-send-email.html) is a great place to start!)
+
+Our email delivery has to be triggeered from somewhere, so we'll do exactl that in `app/controllers/users_controller.rb`
+
+```ruby
+def create
+  @user = User.new(user_params)
+
+  respond_to do |format|
+    if @user.save
+      # Sends email to user when user is created.
+      ExampleMailer.welcome_email(@user).deliver
+
+      format.html { redirect_to @user, notice: 'User is created!' }
+      format.json { render :show, status: :created, location: @user }
+    else
+      format.html { render :new }
+      format.json { render json: @user.errors, status: :unprocessable_entity }
+    end
+  end
+end
+```
+
+Sweet. And the time is now.
 
 Did it work?
 
