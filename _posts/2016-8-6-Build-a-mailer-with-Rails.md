@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build a mailer with Rails"
+title: "Build a Mailer with Rails"
 published: true
 ---
 
@@ -238,7 +238,9 @@ And that's it! You just learned how to send an email through your own email appl
 
 ## More resources
 
-Hope you enjoyed this tutorial! I used [this mailer article](https://launchschool.com/blog/handling-emails-in-rails) written by Saurabh B as well as [Ruby on Rails documentation](http://guides.rubyonrails.org/action_mailer_basics.html) to write this up, so highly encouraged go check them out for more information about mailers.
+Hope you enjoyed this tutorial! I find it fun to build a copy of something that we use everyday like emails, since doing it yourself teaches you a lot about how it works behind the scenes. It also makes a great conversation starter at parties ... maybe (ex. "So, how do you send your emails?")
+
+I used [this mailer article](https://launchschool.com/blog/handling-emails-in-rails) written by Saurabh B as well as [Ruby on Rails documentation](http://guides.rubyonrails.org/action_mailer_basics.html) to write this up, so highly encouraged go check them out for more information about mailers.
 
 Feel free to tweet me at [@jumbosushi](https://twitter.com/jumbosushi) if you have any questions / suggestions for this post!
 
