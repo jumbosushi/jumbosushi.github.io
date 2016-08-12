@@ -4,12 +4,14 @@ title: "Build a mailer with Rails"
 published: true
 ---
 
-![mailer_top](https://media.giphy.com/media/3oEdv9OpWdiMIcCnYc/giphy.gif)
+![mailer_top](https://media4.giphy.com/media/3oEdv9OpWdiMIcCnYc/200.gif)
 
 Guys, I have a confession to make.
 
 Believe it or not, I find emails to be ... cool.
-There. I said it.
+
+![yeah i kno](https://media0.giphy.com/media/94VBV8cMPmyRy/200.gif)
+
 
 I was working on a system-failure notification system at my internship, and that was when I was introduced to the concept of mailers in rails.  
 Building your own email service? How cool is that!?
@@ -35,11 +37,10 @@ Close your Slack and let's get started!
 (But you can keep open #catgifs for you know ... for ... emergencies)
 
 
-**My Development Environment:**
-- **Ruby version: 2.3.1**
-- **Ruby on Rails version: 4.2.6**
-- **OS: Ubuntu 16.04 LTS**
-**
+**My Development Environment:**  
+- **Ruby version: 2.3.1**  
+- **Ruby on Rails version: 4.2.6**  
+- **OS: Ubuntu 16.04 LTS**  
 
 To make my life simpler, I'll assume that you are using UNIX environment and already have ruby + rails installed on your machine (Sorry Windows guru :/ maybe next time)
 
@@ -219,7 +220,7 @@ POST to `localhost:3000/users`
 -> `users_controller` triggers   TeaMailer.welcome_email()  
 -> Email is sent!
 
-From herem it's clear that ActionMailer is integrated well into the rail's MVC workflow.  
+From here it's clear that ActionMailer is integrated well into the rail's MVC workflow.  
 Just a simple POST, and Rails takes care of the rest for us.  
 Pretty cool eh?
 
