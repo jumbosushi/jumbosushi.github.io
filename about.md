@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Who is Atsushi Yamamoto ?
+title: About
 permalink: /about/
 ---
 
-Hello hello
+Hi :wave:
 
-My name is Atsushi, and I'm a 3rd year Business and Computer Science student at University of British Columbia.
+My name is Atsushi, and I'm a 3rd year Business and Computer Science student at University of British Columbia in Vancouver, Canada.
 
-I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
+I've worked as an intern at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
 
-Beside from perfecting my green tea brewing, I enjoy going for a run late at night as well as playing around with Ruby on Rails.
+Things I enjoy are going late night run as well as [configuring my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc).
 
-I"m currently looking for summer internship oppurtunities!
+I'm currently looking for summer internship oppurtunities!
 
-### Contact me 👋
+### Get in touch :mailbox:
 
 Email: [hi@atsushi.me](mailto:hi@atsushi.me)
 
