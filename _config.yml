@@ -6,10 +6,12 @@
 name: Atsushi Yamamoto
 
 # Short bio or description (displayed in the header)
-description: Web Developer who likes banana bread as much as the web
+description: Software engineer based in Vancouver
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/9669739?v=3&s=460
+
+# theme: jekyll-swiss
 
 #
 # Flags below are optional
@@ -18,7 +20,7 @@ avatar: https://avatars3.githubusercontent.com/u/9669739?v=3&s=460
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: yamamotoatsushi927@gmail.com
+  email: hi@atsushi.me
   facebook:
   flickr:
   github: jumbosushi
@@ -34,7 +36,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: jumbosushi
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-76345903-1
@@ -56,7 +58,7 @@ baseurl: ""
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v3.6.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -73,7 +75,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+options:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jemoji
