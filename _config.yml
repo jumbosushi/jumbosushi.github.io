@@ -1,9 +1,6 @@
-#
-# This file contains configuration flags to customize your site
-#
-
 # Name of your site (displayed in the header)
 name: Atsushi Yamamoto
+title: Atsushi Yamaoto
 
 # Short bio or description (displayed in the header)
 description: Software engineer based in Vancouver
@@ -13,19 +10,13 @@ avatar: https://avatars3.githubusercontent.com/u/9669739?v=3&s=460
 
 theme: jekyll-swiss
 
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
+social:
   email: hi@atsushi.me
-  flickr:
-  github: jumbosushi
-  instagram:
-  linkedin: yamamotoatsushi
-  rss: http://jumbosushi.github.io/feed.xml
+  github_username: jumbosushi
+  github_repo: jumbosushi.github.io
   twitter: jumbosushi
+  linkedin: yamamotoatsushi
+  rss: https://atsushi.me/feed.xml
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -43,10 +34,6 @@ url: http://jumbosushi.github.io/
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
 
 permalink: /:title/
 
