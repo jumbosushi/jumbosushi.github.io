@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Build a Mailer with Rails"
+categories: blog
 published: true
+permalink: /:categories/:title/
 ---
 
 ![mailer_top](https://media4.giphy.com/media/3oEdv9OpWdiMIcCnYc/200.gif)
@@ -19,7 +21,7 @@ In this tutorial we will learn how to set up your own local email service in  ra
 
 This article is aimed at people who have some idea of how MVC works in Rails, but havent really touched that "mailer" directory ever since "rails new" command (we've all been there)
 
-Haven't used Rails in a while or just wanna know enough to go through this article?  
+Haven't used Rails in a while or just wanna know enough to go through this article?
 I found [this article](http://adrianmejia.com/blog/2011/08/11/ruby-on-rails-architectural-design/) by Adrian Mejia super helpful when I was trying to grasp the overview of the framework. It's bit lengthy but it'll be worth it. Check it out!
 
 What you'll soon find out is that mailer is nothing to be scared of. In fact, it follows a familiar MVC logic that the rest of the rails app follows. It's almost like learning to ride a penny board after knowing how to ride skateboard. Piece of cake.
@@ -32,10 +34,10 @@ Watch out, emails are about to be cool again.
 
 ## Setting up the applicatin
 
-**My Development Environment:**  
-- **Ruby version: 2.3.1**  
-- **Ruby on Rails version: 4.2.6**  
-- **OS: Ubuntu 16.04 LTS**  
+**My Development Environment:**
+- **Ruby version: 2.3.1**
+- **Ruby on Rails version: 4.2.6**
+- **OS: Ubuntu 16.04 LTS**
 
 I'll assume that you are using UNIX environment and already have ruby + rails installed on your machine.
 
@@ -66,8 +68,8 @@ class TeaMailer < ApplicationMailer
 end
 ```
 
-Now it's time to make the actual content of the email!  
-Make a new html file at `app/views/tea_mailer/welcome_email.html.erb`  
+Now it's time to make the actual content of the email!
+Make a new html file at `app/views/tea_mailer/welcome_email.html.erb`
 This will be template of the email we'll be sending in our app. Feel free to make it anything you would expect from TeaHouse newsletter (obviously tea emojis). Here's mine.
 
 ```html
@@ -88,7 +90,7 @@ This will be template of the email we'll be sending in our app. Feel free to mak
 </html>
 ```
 
-According to [the rails doc](http://guides.rubyonrails.org/action_mailer_basics.html), it is good practice to send the text version of the email on top of the html. This is so that some email clients that does't not support html template can still receive our email. 
+According to [the rails doc](http://guides.rubyonrails.org/action_mailer_basics.html), it is good practice to send the text version of the email on top of the html. This is so that some email clients that does't not support html template can still receive our email.
 
 `app/views/tea_mailer/welcome_email.txt.erb` should be made, and here's how mine turned out.
 
@@ -193,7 +195,7 @@ Let's make it work for our app!
   * key: user[name],  value: John Doe
   * key: user[email], value: YOUR_EMAIL
 
-Using user[something] syntax is used to send a hash to our application through Postman.  
+Using user[something] syntax is used to send a hash to our application through Postman.
 In this case, what is being send is:
 
 ```ruby
@@ -210,13 +212,13 @@ Afterward, it should look something like this:
 So how will this work? Let's bring it back to earilier MVC topic.
 The steps taken by our application will be something like:
 
-POST to `localhost:3000/users`  
--> `routes.rb` triggers `users_controller`'s create method  
--> `users_controller` triggers   TeaMailer.welcome_email()  
+POST to `localhost:3000/users`
+-> `routes.rb` triggers `users_controller`'s create method
+-> `users_controller` triggers   TeaMailer.welcome_email()
 -> Email is sent!
 
-From here it's clear that ActionMailer is integrated well into the rail's MVC workflow.  
-Just a simple POST, and Rails takes care of the rest for us.  
+From here it's clear that ActionMailer is integrated well into the rail's MVC workflow.
+Just a simple POST, and Rails takes care of the rest for us.
 Pretty cool eh?
 
 It's all set! Change the address to your own gmail, and click the send button.
@@ -233,7 +235,7 @@ And that's it. You just learned how to send an email through your own email appl
 
 ## More resources
 
-Hope you enjoyed this tutorial! I find it fun to build a copy of something that we use everyday like emails, since doing it yourself teaches you a lot about how it works behind the scenes. 
+Hope you enjoyed this tutorial! I find it fun to build a copy of something that we use everyday like emails, since doing it yourself teaches you a lot about how it works behind the scenes.
 
 I used [this mailer article](https://launchschool.com/blog/handling-emails-in-rails) written by Saurabh B as well as [Ruby on Rails documentation](http://guides.rubyonrails.org/action_mailer_basics.html) to write this up, so highly encouraged go check them out for more information about mailers.
 

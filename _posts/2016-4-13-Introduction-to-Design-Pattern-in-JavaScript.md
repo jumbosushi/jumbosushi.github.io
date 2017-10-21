@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Introduction to Design Pattern in JavaScript"
+categories: blog
 published: true
+permalink: /:categories/:title/
 ---
 
 ![BUILDING](https://s.yimg.com/ny/api/res/1.2/sBYU0kLm_6u4R7Q8c0_MEw--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTAw/http://l.yimg.com/os/publish-images/movies/2014-02-07/893031a0-904f-11e3-af9e-c7c48465647e_lego-construct.gif)

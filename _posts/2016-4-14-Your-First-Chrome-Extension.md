@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Your First Chrome Extension"
+categories: blog
 published: true
+permalink: /:categories/:title/
 ---
 
 ![chromeisdabest](https://media3.giphy.com/labs/images/chrome-extension.gif)
