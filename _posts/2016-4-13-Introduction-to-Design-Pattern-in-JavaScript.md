@@ -11,7 +11,7 @@ permalink: /:categories/:title/
 If you've been coding for a while, you might have heard about this thing called **"Design Pattern"**. But what the heck are they? Why are they useful? Should you learn them?
 As another JavaScript novice like yourself, I recently learned about this concept too. I found it really cool so I wanted to share with you!
 
-This article is aimed toward programmers who have some experience with JavaScript, maybe wrote an app or two, but never thought about how to design their code. Even if you are a novice programmer, this article should entertain you and give you a quick refresher on one of the most common design patterns.
+This article is aimed at programmers who have some experience with JavaScript, maybe wrote an app or two, but never thought about how to design their code. Even if you are a novice programmer, this article should entertain you and give you a quick refresher on one of the most common design patterns.
 
 It would be helpful to have a basic understanding of Object Oriented Programming and Closures. If you are unsure of what they are, I found the following articles by JavaScript.isSexy to be very helpful and ... well, sexy.
 
@@ -20,13 +20,9 @@ It would be helpful to have a basic understanding of Object Oriented Programming
 
 ## But first, what is a design pattern?
 
-![wut is this](http://img.pandawhale.com/post-32023-what-is-this-are-you-trying-to-UN60.gif)
-
-Nope.
-
 According to the author of ["Learning JavaScript Design Patterns"](https://addyosmani.com/resources/essentialjsdesignpatterns/book/), Design Pattern is *"a reusable solution that can be applied to commonly occurring problems in software design - in our case - in writing JavaScript web applications."*
 
-In other words, design patterns provide a set ways to solve common problems, which is super helpful if you are new to JavaScript like me since it let me focus on building cool apps instead of focusing on how to structure my code.
+In other words, design patterns provide set ways to solve common problems, which is super helpful if you are new to JavaScript like me since it let me focus on building cool apps instead of focusing on how to structure my code.
 
 ## Do I need to know design pattern?
 
@@ -36,11 +32,11 @@ Before we get into to the meat and potato of this article, I know what you're th
 
 But think of it like this. Imagine that you are trying to build a house. You could build it by putting together woods based on how you think a house should look like, and I know you are smart so it would probably work. However, you might find it hard to change part of the house after a while since many things might be depended on each other unintentionally.
 
-Instead, let's say your architect friend Joe comes along to help you build the house. Joe is a nice guy, so he draws a diagram on how the house should be build based on his experience. Once the house is build, you would find it easy to manipulate part of the house since you have understanding of how changing one part affect others. After enough time, you can change the house to be what ever you want it to be with less hustle!
+Instead, let's say your architect friend Joe comes along to help you build the house. Joe is a nice guy, so he draws a diagram on how the house should be build based on his experience. Once the house is built, you would find it easy to manipulate part of the house since you have an understanding of how changing one part affects others. After enough time, you can change the house to be whatever you want it to be with less hustle!
 
 ![Two Houses](http://i.imgur.com/BnvyFnp.jpg)
 
-The planning diagram that Joe made is exactly what design pattern is! It gives you a roadmap to build a robust software from other programmers experiences that makes your code easy to manipulate and scale for everyone!
+The planning diagram that Joe made is exactly what design pattern is! It gives you a roadmap to build a robust software from other programmers experiences that make your code easy to manipulate and scale for everyone!
 
 Beside from the fact you can knock your friend's socks off by saying you know JavaScript design pattern, knowing design patterns makes you a better programmer! It allows you to:
 
@@ -59,7 +55,7 @@ To sum it up it is almost like a ....
 Awesome! Learning Design pattern sounds like a great deal eh?
 But now the questions is, **which one should you learn???**
 
-There are lots of design patterns out there. Important thing to keep in mind is that *there is no design pattern is one size fits all.*
+There are lots of design patterns out there. The important thing to keep in mind is that *there is no design pattern is one size fits all.*
 With that being said, there are some patterns that are applicable to many cases.
 
 Please allow me to introduce - **Module Design Pattern!**
@@ -69,10 +65,10 @@ Please allow me to introduce - **Module Design Pattern!**
 Module design pattern is one of the most common JavaScript design pattern used, and one of the easiest to use!
 The main idea is that **it provides JavaScript classes an ability to have private variables and private methods!**
 
-Why are private variables and methods good? These StackOverflow answers gives a great explanation than I ever could!
+Why are private variables and methods good? These StackOverflow answers give a great explanation than I ever could!
 
 - [Why do we need private variables?](https://programmers.stackexchange.com/questions/143736/why-do-we-need-private-variables)
-- [Why “private” methods in the object oriented?](https://stackoverflow.com/questions/2620699/why-private-methods-in-the-object-oriented)
+- [Why “private” methods in the object-oriented?](https://stackoverflow.com/questions/2620699/why-private-methods-in-the-object-oriented)
 
 To summarize above answers:
 
