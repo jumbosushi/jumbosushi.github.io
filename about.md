@@ -1,20 +1,30 @@
 ---
 layout: page
-title: Who is Atsushi Yamamoto ?
+title: About
 permalink: /about/
 ---
 
-Hello hello
+Hi there :wave:
 
-My name is Atsushi, and I'm a 3rd year Business and Computer Science student at University of British Columbia.
+Atsushi here. I'm a 3rd year Business and Computer Science student at University of British Columbia.
 
-I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
+I've worked as an intern at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
 
-Beside from perfecting my green tea brewing, I enjoy going for a run late at night as well as playing around with Ruby on Rails.
+Outside of class I organized [nwHacks](https://www.nwhacks.io/) and now run community events for [StartupStorm](https://www.startupstorm.org/).
 
-I"m currently looking for summer internship oppurtunities!
+I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc).
 
-### Contact me 👋
+### Talks
+
+#### 2017
+- [Intro to OSS @ StartupStorm Hacktoberfest](http://slides.com/jumbosushi/intro-to-oss)
+- [The Emerging World of PWA @ DevTeach Montreal](http://slides.com/jumbosushi/the-emerging-world-of-pwa-devteach)
+- [State Management with Redux @ DevTeach Montreal](http://slides.com/jumbosushi/state-management-with-redux)
+- [Understanding React @ DevTeach Ottawa](http://slides.com/jumbosushi/understanding-react)
+- [The Emerging World of PWA @ OttawaJS](http://slides.com/jumbosushi/the-emerging-world-of-pwa)
+- [Redux Crash Course @ OttawaJS](http://slides.com/jumbosushi/redux-crash-course)
+
+### Get in touch :mailbox:
 
 Email: [hi@atsushi.me](mailto:hi@atsushi.me)
 
