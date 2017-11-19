@@ -22,11 +22,23 @@
   <meta property="og:site_name" content="Atsushi Yamamoto">
   <meta property="og:locale" content="en_US">
   <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@jumbosushi">
-  <meta name="twitter:title" content="Atsushi Yamamoto">
-  <meta name="twitter:description" content="Atsushi Yamamoto - Software Engineer in Vancouver">
-  <meta name="twitter:image" content="https://atsushi.me/images/headshot.jpg">
+  <meta name="twitter:site"    content="@{{ site.social.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.social.twitter }}">
+  <meta name="twitter:title"   content="{{ site.title }}">
+
+  {% if page.summary %}
+  <meta name="twitter:description" content="{{ page.summary }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+
+  {% if page.image %}
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  {% else %}
+  <meta name="twitter:card"  content="summary">
+  <meta name="twitter:image" content="{{ site.image }}">
+  {% endif %}
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
