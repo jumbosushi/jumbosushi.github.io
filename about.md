@@ -10,7 +10,7 @@ Atsushi here. I'm a 3rd year Business and Computer Science student at University
 
 I've worked as an intern at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
 
-Outside of class I organized [nwHacks](https://www.nwhacks.io/) and now run community events for [StartupStorm](https://www.startupstorm.org/).
+Outside of classes I helped organize [nwHacks](https://www.nwhacks.io/) and now run community events for [StartupStorm](https://www.startupstorm.org/).
 
 I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc).
 
