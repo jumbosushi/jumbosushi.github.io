@@ -6,9 +6,9 @@ permalink: /about/
 
 Hi there :wave:
 
-Atsushi here. I'm a 3rd year Business and Computer Science student at University of British Columbia.
+Atsushi here. I'm a 5th year Business and Computer Science student at University of British Columbia.
 
-I've worked as an intern at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
+I currently work as a Software Engineering Intern at [Stitch Fix](http://stitchfix.com/). I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
 
 Outside of classes I helped organize [nwHacks](https://www.nwhacks.io/) and now run community events for [StartupStorm](https://www.startupstorm.org/).
 
