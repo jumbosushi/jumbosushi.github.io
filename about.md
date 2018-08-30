@@ -8,13 +8,16 @@ Hi there :wave:
 
 Atsushi here. I'm a 5th year Business and Computer Science student at University of British Columbia.
 
-I currently work as a Software Engineering Intern at [Stitch Fix](http://stitchfix.com/). I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
+I most recently worked as a Software Engineering Intern at [Stitch Fix](http://stitchfix.com/). I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
 
-Outside of classes I helped organize [nwHacks](https://www.nwhacks.io/) and now run community events for [StartupStorm](https://www.startupstorm.org/).
+Outside of classes I helped organize [nwHacks](https://www.nwhacks.io/) and ran community events for [StartupStorm](https://www.startupstorm.org/).
 
-I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc).
+I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc)
 
 ### Talks
+
+#### 2018
+- [hjkl everywhere @ Stitch Fix Summit](https://slides.com/jumbosushi/hjkl-everywhere)
 
 #### 2017
 - [Intro to OSS @ StartupStorm Hacktoberfest](http://slides.com/jumbosushi/intro-to-oss)
