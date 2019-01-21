@@ -27,7 +27,7 @@ Run the following command to enable this git option:
 ```sh
 # 10368000 is 4 months in seconds
 # With this config, git will remove credential from memory after 4 months
-git config --global credentials.helper 'cache --timeout=10368000'
+git config --global credential.helper 'cache --timeout=10368000'
 ```
 
 You can check that this config is enabled by running the following command:
@@ -46,7 +46,7 @@ Now if you type in git credentials via `git push` or `git pull`, it will be stor
 If you want to save the password permanently in the system, you can use `store` option like in the following command:
 
 ```sh
-git config --global credentials.helper store
+git config --global credential.helper store
 ```
 
 However note that once you type credentials for git server, the credentials will be stored in `~/.git-credentials` file as **plain text file**!
