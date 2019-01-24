@@ -14,6 +14,12 @@ Outside of classes I helped organize [nwHacks](https://www.nwhacks.io/) and ran 
 
 I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc)
 
+### Get in touch :mailbox:
+
+Email: [yatsushi@alumni.ubc.ca](mailto:yatsushi@alumni.ubc.ca)
+
+Twitter: [@jumbosushi](https://twitter.com/jumbosushi)
+
 ### Talks
 
 #### 2018
@@ -27,9 +33,4 @@ I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/
 - [The Emerging World of PWA @ OttawaJS](http://slides.com/jumbosushi/the-emerging-world-of-pwa)
 - [Redux Crash Course @ OttawaJS](http://slides.com/jumbosushi/redux-crash-course)
 
-### Get in touch :mailbox:
-
-Email: [yatsushi@alumni.ubc.ca](mailto:yatsushi@alumni.ubc.ca)
-
-Twitter: [@jumbosushi](https://twitter.com/jumbosushi)
 
