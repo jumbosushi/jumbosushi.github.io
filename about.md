@@ -29,7 +29,7 @@ I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/
 
 ### Get in touch :mailbox:
 
-Email: [hi@atsushi.me](mailto:hi@atsushi.me)
+Email: [yatsushi@alumni.ubc.ca](mailto:yatsushi@alumni.ubc.ca)
 
 Twitter: [@jumbosushi](https://twitter.com/jumbosushi)
 
