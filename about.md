@@ -20,7 +20,7 @@ Email: [yatsushi@alumni.ubc.ca](mailto:yatsushi@alumni.ubc.ca)
 
 Twitter: [@jumbosushi](https://twitter.com/jumbosushi)
 
-### Talks
+### Talks :microphone:
 
 #### 2018
 - [hjkl everywhere @ Stitch Fix Summit](https://slides.com/jumbosushi/hjkl-everywhere)
