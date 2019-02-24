@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rubyconf 2017: Opportunity Scholarとして参加したイベントレポ"
+title: "Rubyconf 2017にOpportunity Scholarとして参加したイベントレポ"
 categories: blog
 published: true
 permalink: /:categories/rubyconf-2017-as-opportunity-scholar-jp/
