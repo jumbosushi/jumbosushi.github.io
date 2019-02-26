@@ -14,7 +14,7 @@ When you try to `git push` or  `git pull`, you're asked to type in username and 
 
 (Green line is to cover up my CS id)
 
-This guide will show how you can add bash script to automate typing your authentication info!
+This guide will show how you can use git config to cache your authentification info
 
 ## Saving credentials
 
