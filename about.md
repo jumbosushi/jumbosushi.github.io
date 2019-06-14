@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi there :wave:
 
-Atsushi here. I'm a 5th year Business and Computer Science student at University of British Columbia.
+Atsushi here. I'm a recent graduate from University of British Columbia with a Business and Computer Science Combined Major degree.
 
 I have most recently worked as a Software Engineering Intern at [Stitch Fix](http://stitchfix.com/). I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
 
@@ -16,7 +16,7 @@ I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/
 
 ### Get in touch :mailbox:
 
-Email: [yatsushi@alumni.ubc.ca](mailto:yatsushi@alumni.ubc.ca)
+Email: [atsushi@yatsushi.com](mailto:atsushi@yatsushi.com)
 
 Twitter: [@jumbosushi](https://twitter.com/jumbosushi)
 

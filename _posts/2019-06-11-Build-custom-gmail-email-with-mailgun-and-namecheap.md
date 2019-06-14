@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build custom Gmail email with Mailgun and Namecheap"
+title: "Build a custom email with Mailgun & Namecheap and manage it from Gmail"
 categories: blog
 published: true
 permalink: /:categories/build-custom-email-with-mailgun-and-namecheap/
