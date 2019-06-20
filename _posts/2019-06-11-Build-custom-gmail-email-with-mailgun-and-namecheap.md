@@ -10,13 +10,13 @@ permalink: /:categories/build-custom-email-with-mailgun-and-namecheap/
 
 I've used Zoho Mail for quite some time but was never happy with their UI. With some googling, I found that [Mailgun](https://www.mailgun.com) makes it pretty easy for me to set up a custom email that I can manage on Gmail with my own domain from [Namecheap](https://www.namecheap.com) for free!
 
-In this tutorial, we'll be going over how I created my own personal email (`atsushi@yatsushi.com`) from the Namecheap domain I purchased (`yatsushi.com`). How it will work is that we will create a new receiving and sending route specifically for our new email which will then be forwarded to existing Gmail address for us to read. From there we'll add a new account on Gmail where we can send or reply to a new email straight from Gmail! 
+In this tutorial, we'll be going over how I created my own personal email (`atsushi@yatsushi.com`) from the Namecheap domain I purchased (`yatsushi.com`). How it works is that we will create a new receiving and sending route specifically for our new email which will then be forwarded to existing Gmail address for us to read. From there we'll add a new account on Gmail where we can send or reply to a new email straight from Gmail!
 
 ## Registering a domain on Mailgun
 
 First, go to [Mailgun](https://www.mailgun.com) website and make an account. The username and email that you use here don't affect this new email we'll be making so no pressure.
 
-Mailgun has a free plan for up to 10,000 emails as of June 2019, and if you ask me that's more than enough for my personal use.
+Mailgun has a free plan for **up to 10,000 emails per month** as of June 2019, and if you ask me that's more than enough for my personal use.
 
 After you've logged in, Go to **Sending > Domains** from the sidebar. Click on "Add New Domain" from that page (aka [here](https://app.mailgun.com/app/sending/domains/new)).
 
@@ -82,4 +82,4 @@ When you click **Add Account**, Gmail will send a confirmation email to the new 
 
 And that's it! Your email is ready to be used.
 
-Feel free to email me at `atsushi@yatsushi.com` with your brand new email to let me know it works, or if you have any feedback on this post! 
+Feel free to email me at `atsushi@yatsushi.com` with your brand new email to let me know it works, or if you have any feedback on this post!
