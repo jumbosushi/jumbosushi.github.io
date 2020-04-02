@@ -6,11 +6,9 @@ permalink: /about/
 
 Hi there :wave:
 
-Atsushi here. I'm a recent graduate from University of British Columbia with a Business and Computer Science Combined Major degree.
+Atsushi here. I'm a software engineer at [Stitch Fix](https://www.stitchfix.com/) in Runtime Infrastructure team.
 
-I have most recently worked as a Software Engineering Intern at [Stitch Fix](http://stitchfix.com/). I've interned at [BlackBerry](https://ca.blackberry.com/) and at [Prynt](https://www.prynt.co/) in the past.
-
-Outside of classes I helped organize [nwHacks](https://www.nwhacks.io/) and ran community events for [StartupStorm](https://www.startupstorm.org/).
+Previously I've interned at [Stitch Fix](http://stitchfix.com/), [BlackBerry](https://ca.blackberry.com/), and [Prynt](https://www.prynt.co/).
 
 I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc)
 
