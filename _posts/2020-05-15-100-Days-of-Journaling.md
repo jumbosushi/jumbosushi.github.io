@@ -44,5 +44,5 @@ It's definitely been a fun ride. I'm excited how I'll feel after the next milest
 
 ## Closing thoughts
 
-It's definitely been a fun ride. I'm excited how I'll feel after after the next milestone (365 days?), more importantly to be able to look back on what I was doing on a specific day. If you write a journal as well, feel free to reach out. Would love to hear about how your experience and how your journal template is organized.
+It's definitely been a fun ride! Can't wait to see how I'll feel after after the next milestone (365 days?). If you write a journal as well, please feel free to reach out! Would love to hear about how your experience and how your journal template is organized.
 
