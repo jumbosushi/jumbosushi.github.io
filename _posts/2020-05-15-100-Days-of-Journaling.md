@@ -18,9 +18,9 @@ For me the act of journaling functions in three ways: documentation, comprehensi
 
 ### Documenting emotional highs and lows
 
-The act of writing a journal is akin to welding new tuned teeth for a music box. Each entry added is a new tooth I can use to create a note and relive moments in my personal history. Significant life events (such as the first day on the job or the university graduation) may have a longer mental shelf life. In comparison, the day-to-day is quick to be the target of human memory's garbage collection. However, I would say that each day that led to the said memorable events should be cherished as any other. As Ralph Emerson said, "Life is a journey, not a destination".
+The act of writing a journal is akin to carving out new tuned teeth for a music box. Each entry added is a new tooth I can use to create a note and relive moments in my personal history. Significant life events (such as the first day on the job or the university graduation) may have a longer mental shelf life. In comparison, the day-to-day is quick to be the target of human memory's garbage collection. However, I would say that each day that led to the said memorable events should be cherished as any other. As Ralph Emerson said, "Life is a journey, not a destination".
 
-This works especially well for moments of intense emotions. After visiting a new country while backpacking through Asia, I made sure to record the excitements and discoveries along the way. Just as planned, I'm able to relive the day I got chased by hotel employees in Ho Chi Minh City by reading the old journal.
+This works especially well for moments of intense emotions. For example while backpacking through Asia after the graduation, I made sure to record the excitements and discoveries as I entered a new country. Just as planned, I'm able to relive the day I got chased by hotel employees in Ho Chi Minh City by reading the old journal.
 
 Recording thoughts over the years also unlock the answers to questions such as "What was I doing exactly a year ago?" These questions have been lingering in my mind but never had enough data points to give myself an answer. Is it as interesting to know as I made it out to be? Only time will tell.
 
