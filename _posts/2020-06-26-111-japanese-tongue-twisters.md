@@ -8,19 +8,21 @@ permalink: /:categories/111-japanese-tongue-twisters/
 
 **tl;dr:** The actual list is down the article
 
-If you ever meet me irl, you might wonder why I mumble rap all the time in conversations. The fact is I don't. I just have a terrible pronunciation in general, which I decided to improve during the quarantine.
+If you ever meet me irl, you might wonder why I mumble rap all the time in conversations. The fact is ... I don't. I just have a terrible pronunciation in general, which I decided to improve during the quarantine.
 
-After series of searches on reddit, I finally discovered the cure: tongue twisters.
+After series of searches on the ~internet~, I finally discovered the cure: **tongue twisters**.
 
 While it was easy to find a [list of tongue twisters][1] for English, one of the few Japanese websites I could find was [this][2].
 
 Although I'm fluent in Japanese, there are certain kanjis I struggle with and the website above had loads of it. Additionally I searched for Japanese tongue twisters in both English and Japanese, but there were hardly any I could find on the English web.
 
+This article is for both myself and others who are learning Japanese tongue twisters and hoping to improve their pronunciation.
+
 ### Converting Kanji to Hiragana programmatically
 
-With the kanji strings, all I needed was to convert these to Hiragana programmatically. I ended up using [Goo API][3], but I found [kanjiapi.dev][4] that seems solid as well while writing this article.
+With kanji strings, all I needed was to convert these to Hiragana programmatically. I ended up using [Goo API][3], but I found [kanjiapi.dev][4] that seems solid as well while writing this article.
 
-The final quick-and-dirty script is on [my Gist][5]. The original list was organized by four arbitrary difficulty levels and that format is ketp in my conversion.
+The final quick-and-dirty script is on [my Gist][5]. The original list was organized by four arbitrary difficulty levels and that format is kept in my version of the list.
 
 Feel free to shoot me an email if you see any errors or have any feedback!
 
