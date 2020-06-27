@@ -16,11 +16,11 @@ While it was easy to find a [list of tongue twisters][1] for English, one of the
 
 Although I'm fluent in Japanese, there are certain kanjis I struggle with and the website above had loads of it. Additionally I searched for Japanese tongue twisters in both English and Japanese, but there were hardly any I could find on the English web.
 
-This article is for both myself and others who are learning Japanese tongue twisters and hoping to improve their pronunciation.
+Hence this article is for both myself and others who are learning Japanese tongue twisters looking to improve their pronunciation.
 
 ### Converting Kanji to Hiragana programmatically
 
-With kanji strings, all I needed was to convert these to Hiragana programmatically. I ended up using [Goo API][3], but I found [kanjiapi.dev][4] that seems solid as well while writing this article.
+Since I already found a list of kanji strings, all I needed was to convert these to Hiragana programmatically. I ended up using [Goo API][3], but I found [kanjiapi.dev][4] that seems solid as well while writing this article.
 
 The final quick-and-dirty script is on [my Gist][5]. The original list was organized by four arbitrary difficulty levels and that format is kept in my version of the list.
 
