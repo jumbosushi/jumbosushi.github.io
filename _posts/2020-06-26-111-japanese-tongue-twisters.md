@@ -367,6 +367,6 @@ Feel free to shoot me an email if you see any errors or have any feedback!
 
 [1]: https://www.engvid.com/english-resource/50-tongue-twisters-improve-pronunciation
 [2]: https://hayakutikotoba.web.fc2.com/index.html
-[3]: https://labs.goo.ne.jp/api/jp/hiragana-translation/
+[3]: https://labs.goo.ne.jp/api/en/hiragana-translation/
 [4]: https://kanjiapi.dev/
 [5]: https://gist.github.com/jumbosushi/1872212074ceff8182c60007a569140f
