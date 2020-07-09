@@ -6,7 +6,7 @@ published: true
 permalink: /:categories/kindle-vocab-builder/
 ---
 
-[[Learning]] to love reading again has been the best thing I discovered in my life after college. I prefer e-books over other mediums due to several reasons, but the biggest draw for me is the dictionary feature. I'm continued to be amazed by how many new words you are introduced to just by reading, and thought using the words from the list would be a great way to grow my vocabulary. Here's how I exported the words and added vim keybind to import the word.
+Learning to love reading again has been the best thing to happen after college. I prefer e-books over other mediums due to several reasons, but the biggest draw for me is the dictionary feature. I'm continued to be amazed by how many new words you are introduced to just by reading, and thought having a way to use vocab from the list would be a great way to grow my vocabulary. Here's how I exported the words and added vim keybind to import the word.
 
 Note: this tutorial is based on Kindle Paperwhite. Other firmware might have a different configuration.
 
@@ -44,4 +44,4 @@ nmap <Leader>v "=LoadVocab()<C-M>p
 
 Feel free to reach out to me if you know a better way!
 
-[schme_img]: https://user-images.githubusercontent.com/9669739/87009020-710b7000-c179-11ea-9f1d-1099c1af6fb0.png
+[schema_img]: https://user-images.githubusercontent.com/9669739/87009020-710b7000-c179-11ea-9f1d-1099c1af6fb0.png
