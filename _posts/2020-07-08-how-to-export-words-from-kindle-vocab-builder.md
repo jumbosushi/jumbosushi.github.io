@@ -12,7 +12,7 @@ Note: this tutorial is based on Kindle Paperwhite. Other firmware might have a d
 
 ### Exporting from `vocab.db`
 
-What I didn't know was that all the words you've ever looked up in Kindle is stored in a SQLite database called `vocab.db`. Once you connect your Kindle to the laptop, it will be located at `Kindle > system > vocabulary > vocab.db`.
+What I didn't know was that all the words you've ever looked up in Kindle is stored in a SQLite database called `vocab.db`. Once you connect your Kindle to the laptop, it will be located at `Kindle/system/vocabulary/vocab.db`.
 
 Open the database file with `sqlite3 vocab.db` command.
 
