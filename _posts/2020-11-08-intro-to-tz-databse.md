@@ -30,7 +30,7 @@ Executing busybox-1.31.1-r19.trigger
 OK: 9 MiB in 15 packages
 ```
 
-In order to check which version your `tzdata` package is on, use the package manager's `version` command.
+In order to check which version your `tzdata` package is on, use the package manager's `version` command:
 
 ```
 / # apk version tzdata
@@ -56,7 +56,7 @@ When you install `tzdata`, several related CLI tools are included in the package
 
 ### zdump
 
-`zdump` is used to parse TZif files. You'll see that these files can't be read by typical commands like `cat`.
+`zdump` is used to parse TZif files. You'll see that these files can't be read by typical commands like `cat`:
 
 ```
 / # zdump /usr/share/zoneinfo/America/Los_Angeles
@@ -74,7 +74,7 @@ When you install `tzdata`, several related CLI tools are included in the package
 
 ## Timezone source files
 
-Although timezone rules has become relatively stable within the last decade, it wasn't the case in the 20th century. Here's an example
+Although timezone rules has become relatively stable within the last decade, it wasn't the case in the 20th century. Here's an example:
 
 ```
 / # TZ=America/Los_Angeles date --date="1950-04-01"
@@ -85,7 +85,7 @@ Sun Apr  1 00:00:00 PDT 2007
 
 As captured in [the comment](https://github.com/eggert/tz/blob/beba17f43925823308c6f7f0d5ca9b52d00d351f/northamerica#L525), California voted to start the Daylight Savings day from the last Sunday in April from 1950. However, the federal government [passed the bill](https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States#2005%E2%80%932009:_Second_extension) to extend the Daylight Savings Time to start from the second Sunday of March in 2007. Therefore you see that April 1st was not in Daylight Savings Time back in 1950 above.
 
-Policy changes like this happened throughout the world, and tz database documents these events in the source file. tz database uses three main components: rules, zones, and links. Here is an example configuration from [`zic` man page](https://man7.org/linux/man-pages/man8/zic.8.html) (no need to understand what each line means! This is meant to give an idea of what it may look like)
+Policy changes like this happened throughout the world, and tz database documents these events in the source file. tz database uses three main components: rules, zones, and links. Here is an example configuration from [`zic` man page](https://man7.org/linux/man-pages/man8/zic.8.html) (no need to understand what each line means! This is meant to give an idea of what it may look like):
 
 ```
 # Rule  NAME  FROM  TO    TYPE  IN   ON       AT    SAVE  LETTER/S
@@ -117,7 +117,7 @@ More examples are explored in [tz-how-to page](https://data.iana.org/time-zones/
 
 ## Creating our own timezone
 
-After getting a grasp on the basic syntax, we can define a new timezone ourselves! We'll use the fictional [Konoha city in Hi No Kuni](https://naruto.fandom.com/wiki/Land_of_Fire) from Naturo as our example timezone name. Run the following command to create a source file in the container
+After getting a grasp on the basic syntax, we can define a new timezone ourselves! We'll use the fictional [Konoha city in Hi No Kuni](https://naruto.fandom.com/wiki/Land_of_Fire) from Naturo as our example timezone name. Run the following command to create a source file in the container:
 
 ```sh
 echo "
@@ -153,6 +153,6 @@ Sun Nov  1 00:00:00 KST 2020
 `zic` compiler saves the output to relative `/usr/share/zoneinfo` location based on zone name. At the point of writing this post, it is 11/08/20 so as expected `zdump` prints the time in `KST` (possibly known as `Konoha Standard Time` in Naruto's world). We're setting the new `Hi_No_Kuni/Konoha` as the default time in this container by making a symbolic link to `/etc/localtime`. As a result, `date` command prints the correct timezone given a specific date!
 
 ## Conclusion
-I learned a lot in the process of writing this post, but there are so much more to tz database. As praised in [this blog post](https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/), documentation in the source code is a wealth of knowledge about everything timezone related. I highly recommend to check just to peek at what kind of rules are applied in your home country.
+I learned a lot in the process of writing this post, but there are so much more to tz database. As praised in [this blog post](https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/), documentation in the source code is a wealth of knowledge about everything timezone related. I highly recommend to check out what kind of rules are applied in your home country.
 
 Hope this helped you understand `tz` database a little better!
