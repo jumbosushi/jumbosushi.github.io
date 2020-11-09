@@ -18,7 +18,7 @@ Here are the [official documentaion](https://data.iana.org/time-zones/tz-link.ht
 
 ## tzdata package
 
-tz database and it's related cli tools are distributed as `tzdata` package. Let's download it within our container:
+tz database and its related cli tools are distributed as `tzdata` package. Let's download it within our container:
 
 ```
 $> docker run -it alpine:3.12
@@ -74,7 +74,7 @@ When you install `tzdata`, several related CLI tools are included in the package
 
 ## Timezone source files
 
-Although timezone rules has become relatively stable within the last decade, it wasn't the case in the 20th century. Here's an example:
+Although timezone rules have become relatively stable within the last decade, it wasn't the case in the 20th century. Here's an example:
 
 ```
 / # TZ=America/Los_Angeles date --date="1950-04-01"
@@ -108,14 +108,14 @@ Zone    Europe/Zurich  0:34:08     -      LMT     1853 Jul 16
 Link    Europe/Zurich  Europe/Vaduz
 ```
 
-I recommend reading the `zic` man page for what each column specifically means, but a simplified meanings of these lines are:
+I recommend reading the `zic` man page for what each column specifically means, but simplified meanings of these lines are:
 - Rule defines special rules that to be applied within a time frame
-- Zone defines a difference from UTC time to be used as a default, and specifies which rule to apply
+- Zone defines a difference from UTC to be used as the default and specifies which rule to apply
 - Link creates an alias (`Europe/Vaduz` will be an alias for `Europe/Zurich` zone)
 
 More examples are explored in [tz-how-to page](https://data.iana.org/time-zones/tz-how-to.html)
 
-## Creating our own timezone
+## Creating our custom timezone
 
 After getting a grasp on the basic syntax, we can define a new timezone ourselves! We'll use the fictional [Konoha city in Hi No Kuni](https://naruto.fandom.com/wiki/Land_of_Fire) from Naturo as our example timezone name. Run the following command to create a source file in the container:
 
@@ -131,11 +131,11 @@ Zone    Hi_No_Kuni/Konoha -8:00   HI      K%sT
 " > /konoha.zi
 ```
 
-The above config defines following rules:
+The above config defines the following rules:
 - Define `Hi_No_Kuni/Konoha` zone that will be 8 hours behind UTC (same as PST). It will use `HI` rules. `%s` substring in `K%sT` will be replaced with the `LETTER` field from a current rule in use.
 - We define two rules:
   1. From the 2nd Sunday in Mar 2020, subtract 1 hour from the local time. Use `KDT` to refer to this timezone
-  2. From the Nov 1st 2020, use exact the local time. Use `KST` to refer to this timezone
+  2. From Nov 1st 2020, use the exact the local time. Use `KST` to refer to this timezone
 
 Let's verify that it works:
 
@@ -153,6 +153,6 @@ Sun Nov  1 00:00:00 KST 2020
 `zic` compiler saves the output to relative `/usr/share/zoneinfo` location based on zone name. At the point of writing this post, it is 11/08/20 so as expected `zdump` prints the time in `KST` (possibly known as `Konoha Standard Time` in Naruto's world). We're setting the new `Hi_No_Kuni/Konoha` as the default time in this container by making a symbolic link to `/etc/localtime`. As a result, `date` command prints the correct timezone given a specific date!
 
 ## Conclusion
-I learned a lot in the process of writing this post, but there are so much more to tz database. As praised in [this blog post](https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/), documentation in the source code is a wealth of knowledge about everything timezone related. I highly recommend to check out what kind of rules are applied in your home country.
+I learned a lot in the process of writing this post, but there is so much more to tz database. As praised in [this blog post](https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/), documentation in the source code is a wealth of knowledge about everything timezone related. I highly recommend checking out what kind of rules are applied in your home country.
 
-Hope this helped you understand `tz` database a little better!
+Hope this helped you understand tz database a little better!
