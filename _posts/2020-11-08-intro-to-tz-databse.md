@@ -14,7 +14,7 @@ We'll be using `alpine:3.12` Docker image to test things out.
 
 [tz database](https://en.wikipedia.org/wiki/Tz_database) is a collection of binary files used by most systems in the world to convert time between various timezones.
 
-Here are the [official documentaion](https://data.iana.org/time-zones/tz-link.html) and [the source code on GitHub](https://github.com/eggert/tz)
+Here are the [official documentaion](https://data.iana.org/time-zones/tz-link.html) and [the source code on GitHub](https://github.com/eggert/tz). [`NEWS`](https://github.com/eggert/tz/blob/master/NEWS) file is used as a replacement for more common `CHANGELOG` in other projects.
 
 ## tzdata package
 
