@@ -11,7 +11,7 @@ Previously I published the take aways from writing journals, and in this post I 
 There are many schools of thought on which medium to write journals on (e.g., physical journal, audio recordings, etc). I like using text files for couple reasons:
 - Search. It's nice to be able to look for certain events.
 - Storage. Every journal entry is stored on Dropbox.
-- Analysis. Lets me answer questions like "How many journals did I write this year?"
+- Analysis. Lets me answer questions like "How many journal entries did I write this year?"
 
 The biggest draw for me is the writing experience. As I'm already fairly experienced with vim text manipulation, I can write my journals swiftly. It ultimately lowers the barrier for me to write consistently.
 
