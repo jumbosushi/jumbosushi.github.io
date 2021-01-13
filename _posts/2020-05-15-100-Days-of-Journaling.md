@@ -36,7 +36,7 @@ Writing set up is worth a separate post so I won't go too much in detail, but I 
 
 ## What did I learn?
 
-The biggest takeaway so far is learning to be patient. Building a habit from scratch time takes time, and it's too easy to blame yourself at the moment of failure. What started as a daily Todo list soon became a place of self-reflection. As the list of journal entries grew over time, it helped me visualize a simple fact that each day is part of a bigger time unit, and to accomplish something significant you really have to take it at a time. Keeping a bigger picture in mind had a calming effect in times of hardships by reminding myself that today is part of a bigger story. At a certain point, your view on failure changes to view them as an opportunity to reflect back on what went wrong and try it again differently tomorrow based on new learnings. Compared to the time prior to writing journals, each passing day feels more like part of a bigger narrative that is unfolding as I go.
+The biggest takeaway so far is learning to be patient. Building a habit from scratch time takes time, and it's too easy to blame yourself at the moment of failure. What started out as a daily Todo list soon morphed into a place of self-reflection. As the list of journal entries grew over time, it helped me visualize a simple fact that each day is part of a bigger time unit, and to accomplish something significant you really have to take it one day at a time. Compared to the time prior to writing journals, each passing day feels more like part of a bigger narrative that is unfolding as I go.
 
 ## Closing thoughts
 
