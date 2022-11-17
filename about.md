@@ -6,9 +6,9 @@ permalink: /about/
 
 Hi there :wave:
 
-Atsushi here. I'm a software engineer at [Stitch Fix](https://www.stitchfix.com/) in the Runtime Infrastructure team.
+Atsushi here. I'm a Senior Software Engineer at [Etsy](https://www.etsy.com) in the Information Retrieval (IR) Platform team.
 
-Previously I've interned at [Stitch Fix](http://stitchfix.com/), [BlackBerry](https://ca.blackberry.com/), and [Prynt](https://www.prynt.co/).
+Previously I've worked at [Stitch Fix](http://stitchfix.com/), [BlackBerry](https://ca.blackberry.com/), and [Prynt](https://www.prynt.co/).
 
 I live in terminal and love to [configure my Vim](https://github.com/jumbosushi/dotfiles/blob/master/.vimrc)
 
